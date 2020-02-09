@@ -1,0 +1,102 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+void createFile();
+void deleteFile();
+void NoOfFile();
+void OpenFile();
+void AppendFile();
+
+
+int main()
+
+{
+	int choice;
+	printf("MENU \n");
+	printf("1.FILE CREATION \n 2. ADD \n 3. VIEW \n 4. Delete \n 5. EXIT \n");
+	
+	printf("Enter the choice \n ");
+	scanf("%d",&choice);
+	
+	if (choice <6)
+	{
+		while(1)
+	{	
+		switch(choice)
+			{	
+		
+			case 1:  
+			 	createFile();
+			 	break;
+			case 2 : 
+			 	AppendFile();
+				 break;
+			case 3: 
+				 NoOfFile();
+				 break;
+			case 4: 
+				 deleteFile();
+				 break;
+			case 5 :
+				 OpenFile :
+				 break; 
+				
+			case 6:
+			  	 exit(0);
+				 break;
+			}
+	}
+	}
+	else 
+	printf("Enter Wrong Input ");
+	exit(0);
+}
+
+void createFile()
+{
+	
+     int i;
+	char fn[50];
+        FILE * fptr;
+	printf("Enter file name");
+	scanf("%c",&fn[50]);
+        
+        char str[100];
+        fptr = fopen("/home/fputc_test.txt", "w"); // "w" defines "writing mode"
+        for (i = 0; str[i] != '\n'; i++) {
+            /* write to file using fputc() function */
+            fputc(str[i], fptr);
+        }
+        fclose(fptr);
+        	
+
+}
+    
+	
+	
+void AppendFile()
+	{
+	printf("Enter the file name to be Append");
+	
+	}
+void deleteFile()
+	{
+	printf("Enter the file name to be deleted");
+	}
+
+void NoOfFile()
+	{
+	printf("Total files are :");
+	}
+void OpenFile()
+	{
+	printf("Enter the file name to open : ");
+	}
+
+
+
+
+
+		
+

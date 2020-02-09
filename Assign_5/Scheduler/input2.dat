@@ -1,0 +1,5 @@
+policy RR
+jobs 3
+quantum_time 5
+run_time 10 20 30
+
