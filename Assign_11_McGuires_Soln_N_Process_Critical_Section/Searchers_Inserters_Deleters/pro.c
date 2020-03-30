@@ -33,7 +33,7 @@ unsigned int fib(unsigned int n) {
 	return n < 2 ? n : fib(n - 1) + fib(n - 2);
 }
 
-void check(checker_t checker) { /* My check function */
+void check(checker_t checker) {
 	switch (checker) {
 	case INSERT:
 		if (state_delete == OFF && state_insert == OFF) {            /* Inserter can only work with search. */

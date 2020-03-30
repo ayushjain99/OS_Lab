@@ -14,7 +14,7 @@
 #include <time.h>
 
 #define BUFSIZE 1
-#define PERMS 0666 //0666 - To grant read and write permissions
+#define PERMS 0666 // For R/W permissions
 
 const int N = 6;
 const int loopMax = 200;
